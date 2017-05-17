@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="hexo," />
+  <meta name="keywords" content="python,MongoDB," />
 
 
 
@@ -87,19 +87,28 @@
 
 
 
-<meta name="description" content="简介
-简略记录一下安装过程，提供一些参考的网站">
+<meta name="description" content="pymongo&amp;#x64CD;&amp;#x4F5C;MongoDB&amp;#x5E38;&amp;#x7528;&amp;#x547D;&amp;#x4EE4;
+&amp;#x5B89;&amp;#x88C5; pymongo
+1pip install pymongo (&amp;#x6216;&amp;#x8005; pip3 install pymongo)
+&amp;#x5F15;&amp;#x5165;pymongo
+1from pymongo import MongoC">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo 环境搭建与配置（一）">
-<meta property="og:url" content="http://charonx.github.io/2017/03/25/hexo/index.html">
+<meta property="og:title" content="通过pymongo操作MongoDB">
+<meta property="og:url" content="http://charonx.github.io/2017/05/17/pymongo/index.html">
 <meta property="og:site_name" content="charon's blog">
-<meta property="og:description" content="简介
-简略记录一下安装过程，提供一些参考的网站">
-<meta property="og:updated_time" content="2017-03-27T08:56:27.814Z">
+<meta property="og:description" content="pymongo&amp;#x64CD;&amp;#x4F5C;MongoDB&amp;#x5E38;&amp;#x7528;&amp;#x547D;&amp;#x4EE4;
+&amp;#x5B89;&amp;#x88C5; pymongo
+1pip install pymongo (&amp;#x6216;&amp;#x8005; pip3 install pymongo)
+&amp;#x5F15;&amp;#x5165;pymongo
+1from pymongo import MongoC">
+<meta property="og:updated_time" content="2017-05-17T02:02:51.545Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="hexo 环境搭建与配置（一）">
-<meta name="twitter:description" content="简介
-简略记录一下安装过程，提供一些参考的网站">
+<meta name="twitter:title" content="通过pymongo操作MongoDB">
+<meta name="twitter:description" content="pymongo&amp;#x64CD;&amp;#x4F5C;MongoDB&amp;#x5E38;&amp;#x7528;&amp;#x547D;&amp;#x4EE4;
+&amp;#x5B89;&amp;#x88C5; pymongo
+1pip install pymongo (&amp;#x6216;&amp;#x8005; pip3 install pymongo)
+&amp;#x5F15;&amp;#x5165;pymongo
+1from pymongo import MongoC">
 
 
 
@@ -127,13 +136,13 @@
 
 
 
-  <link rel="canonical" href="http://charonx.github.io/2017/03/25/hexo/"/>
+  <link rel="canonical" href="http://charonx.github.io/2017/05/17/pymongo/"/>
 
 
 
 
 
-  <title> hexo 环境搭建与配置（一） | charon's blog </title>
+  <title> 通过pymongo操作MongoDB | charon's blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -272,7 +281,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://charonx.github.io/2017/03/25/hexo/">
+    <link itemprop="mainEntityOfPage" href="http://charonx.github.io/2017/05/17/pymongo/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="charon">
@@ -293,7 +302,7 @@
             
             
               
-                hexo 环境搭建与配置（一）
+                通过pymongo操作MongoDB
               
             
           </h1>
@@ -308,8 +317,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-25T19:48:23+08:00">
-                2017-03-25
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-17T09:45:57+08:00">
+                2017-05-17
               </time>
             
 
@@ -331,8 +340,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/折腾/" itemprop="url" rel="index">
-                    <span itemprop="name">折腾</span>
+                  <a href="/categories/NTUEE-ML-2016-学习笔记/" itemprop="url" rel="index">
+                    <span itemprop="name">NTUEE ML 2016 学习笔记</span>
                   </a>
                 </span>
 
@@ -366,48 +375,35 @@
       
 
       
-        <h2 id="&#x7B80;&#x4ECB;">&#x7B80;&#x4ECB;</h2>
-<pre><code>&#x7B80;&#x7565;&#x8BB0;&#x5F55;&#x4E00;&#x4E0B;&#x5B89;&#x88C5;&#x8FC7;&#x7A0B;&#xFF0C;&#x63D0;&#x4F9B;&#x4E00;&#x4E9B;&#x53C2;&#x8003;&#x7684;&#x7F51;&#x7AD9;</code></pre>
-<a id="more"></a>
-<h2 id="&#x73AF;&#x5883;">&#x73AF;&#x5883;</h2>
+        <h1 id="pymongo&#x64CD;&#x4F5C;mongodb&#x5E38;&#x7528;&#x547D;&#x4EE4;">pymongo&#x64CD;&#x4F5C;MongoDB&#x5E38;&#x7528;&#x547D;&#x4EE4;</h1>
+<h3 id="&#x5B89;&#x88C5;-pymongo">&#x5B89;&#x88C5; pymongo</h3>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pip install pymongo (&#x6216;&#x8005; pip3 install pymongo)</div></pre></td></tr></table></figure>
+<h3 id="&#x5F15;&#x5165;pymongo">&#x5F15;&#x5165;pymongo</h3>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">from pymongo import MongoClient</div></pre></td></tr></table></figure>
+<h3 id="&#x8FDE;&#x63A5;mongodb">&#x8FDE;&#x63A5;mongoDB</h3>
 <ol style="list-style-type: decimal">
-<li><p>nodejs</p>
-<p><a href="https://nodejs.org/en/download/" target="_blank" rel="external">&#x5B98;&#x65B9;&#x7F51;&#x7AD9;</a> &#x76F4;&#x63A5;&#x4E0B;&#x8F7D;&#x5BF9;&#x5E94;&#x7248;&#x672C;&#x53CA;&#x53EF;</p>
-<p>1&#xFF09; &#x7F16;&#x8BD1;&#x5B89;&#x88C5;&#x65B9;&#x6CD5; <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">wget nodejs-source-url(&#x66FF;&#x6362;&#x5F53;&#x524D;&#x7248;&#x672C;&#x7684;&#x4E0B;&#x8F7D;&#x5730;&#x5740;&#xFF0C;&#x4E0A;&#x9762;&#x7684;&#x7F51;&#x7AD9;&#x5C31;&#x6709;)</div><div class="line">tar -zxvf nodejs(&#x4E0B;&#x8F7D;&#x7684;&#x6587;&#x4EF6;&#x540D;&#x79F0;)</div><div class="line">cd nodejs</div><div class="line">./configure</div><div class="line">make</div><div class="line">make install</div></pre></td></tr></table></figure></p></li>
-<li><p>git</p>
-<p><a href="https://git-scm.com/downloads" target="_blank" rel="external">&#x4E0B;&#x8F7D;&#x5730;&#x5740;</a></p>
-<p>1&#xFF09;ubuntu &#x5B89;&#x88C5;&#xFF1A;</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">yum install git</div></pre></td></tr></table></figure></li>
-<li><p>github&#x5E10;&#x53F7;</p>
-<p>&#x5177;&#x4F53;&#x7533;&#x8BF7;&#x65B9;&#x6CD5;&#x53C2;&#x8003;&#x4E0B;&#x9762;&#x7684;&#x94FE;&#x63A5;</p></li>
+<li>&#x901A;&#x8FC7;host+port&#x7684;&#x65B9;&#x5F0F;&#xFF1A;</li>
 </ol>
-<h2 id="&#x5B89;&#x88C5;">&#x5B89;&#x88C5;</h2>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo</div></pre></td></tr></table></figure>
-<h2 id="&#x4E3B;&#x9898;">&#x4E3B;&#x9898;</h2>
-<ol style="list-style-type: decimal">
-<li><p>&#x4E3B;&#x9898;&#x5730;&#x5740;&#xFF1A;</p>
-<ol style="list-style-type: lower-alpha">
-<li><p><a href="https://hexo.io/themes/" target="_blank" rel="external">&#x5B98;&#x65B9;</a></p></li>
-<li><p><a href="https://www.zhihu.com/question/24422335" target="_blank" rel="external">&#x77E5;&#x4E4E;&#x76F8;&#x5173;&#x56DE;&#x7B54;</a></p></li>
-</ol></li>
-<li><p>&#x5B89;&#x88C5;&#x65B9;&#x6CD5;:</p>
-<p>&#x76F4;&#x63A5;git&#x68C0;&#x51FA;&#x4E3B;&#x9898;&#x9879;&#x76EE;&#x5230;themes&#x76EE;&#x5F55;&#x4E0B; <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git clone git_url /themes/name</div></pre></td></tr></table></figure></p>
-<p>&#x4FEE;&#x6539;&#x6839;&#x76EE;&#x5F55;_config.yml&#x6587;&#x4EF6;&#xFF1A; <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">theme: name</div></pre></td></tr></table></figure></p>
-<p>&#x6CE8;&#x610F;&#x5192;&#x53F7;&#x540E;&#x7684;&#x7A7A;&#x683C;</p></li>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">client = MongoClient(host,port)</div></pre></td></tr></table></figure>
+<ol start="2" style="list-style-type: decimal">
+<li>&#x901A;&#x8FC7;uri&#x7684;&#x65B9;&#x5F0F;&#xFF1A;</li>
 </ol>
-<h2 id="&#x914D;&#x7F6E;">&#x914D;&#x7F6E;</h2>
-<ol style="list-style-type: decimal">
-<li>git page &#x4FEE;&#x6539;&#x6839;&#x76EE;&#x5F55;_config.yml&#x6587;&#x4EF6;&#xFF1A; <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">    type: git</div><div class="line">    repository: git&#x5740;&#x5740;</div><div class="line">    branch: master</div></pre></td></tr></table></figure></li>
-</ol>
-<h2 id="&#x63D2;&#x4EF6;">&#x63D2;&#x4EF6;</h2>
-<ol style="list-style-type: decimal">
-<li><p>&#x901A;&#x8FC7;KaTeX &#x6570;&#x5B66;&#x516C;&#x5F0F;&#x89E3;&#x6790;</p>
-<p>&#x4F8B;&#xFF1A; E = m * c^2 &#x2013;&gt; <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>E</mi><mo>=</mo><mi>m</mi><mo>&#x2217;</mo><msup><mi>c</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">E = m * c^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.8141079999999999em;"></span><span class="strut bottom" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.05764em;">E</span><span class="mrel">=</span><span class="mord mathit">m</span><span class="mbin">&#x2217;</span><span class="mord"><span class="mord mathit">c</span><span class="msupsub"><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle uncramped mtight"><span class="mord mathrm mtight">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span></span></span></span></p></li>
-</ol>
-<h2 id="&#x5E38;&#x89C1;&#x95EE;&#x9898;">&#x5E38;&#x89C1;&#x95EE;&#x9898;</h2>
-<h2 id="&#x53C2;&#x8003;&#x94FE;&#x63A5;">&#x53C2;&#x8003;&#x94FE;&#x63A5;</h2>
-<p><a href="http://www.jianshu.com/p/465830080ea9" target="_blank" rel="external">HEXO+Github,&#x642D;&#x5EFA;&#x5C5E;&#x4E8E;&#x81EA;&#x5DF1;&#x7684;&#x535A;&#x5BA2;</a></p>
-<p><a href="http://www.cnblogs.com/syd192/p/6074323.html" target="_blank" rel="external">Hexo&#x7684;Next&#x4E3B;&#x9898;&#x914D;&#x7F6E;</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">client = MongoClient(uri)</div><div class="line"># uri&#x7684;&#x683C;&#x5F0F;&#xFF1A;</div><div class="line">uri = &apos;mongodb://&apos; + user + &apos;:&apos; + pwd + &apos;@&apos; + server + &apos;:&apos; + port +&apos;/&apos;+ db_name</div></pre></td></tr></table></figure>
+<h3 id="&#x6307;&#x5B9A;&#x5C06;&#x8981;&#x8FDB;&#x884C;&#x64CD;&#x4F5C;&#x7684;database&#x548C;collection">&#x6307;&#x5B9A;&#x5C06;&#x8981;&#x8FDB;&#x884C;&#x64CD;&#x4F5C;&#x7684;database&#x548C;collection&#xFF1A;</h3>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">db = client.test_db</div><div class="line">collection = db.test_collection</div></pre></td></tr></table></figure>
+<h3 id="&#x63D2;&#x5165;&#x6570;&#x636E;">&#x63D2;&#x5165;&#x6570;&#x636E;</h3>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">mydict = {&#x201C;name&#x201D;:&#x201D;Lucy&#x201D;, &#x201C;sex&#x201D;:&#x201D;female&#x201D;,&#x201D;job&#x201D;:&#x201D;nurse&#x201D;}</div><div class="line">collection.insert(mydict)</div></pre></td></tr></table></figure>
+<h3 id="&#x67E5;&#x8BE2;&#x6570;&#x636E;">&#x67E5;&#x8BE2;&#x6570;&#x636E;</h3>
+<p>.find_one() &#x663E;&#x793A;&#x6EE1;&#x8DB3;&#x6761;&#x4EF6;&#x7684;&#x7B2C;&#x4E00;&#x4E2A; collection&#xFF0C;find() &#x7684;&#x7ED3;&#x679C;&#x5219;&#x662F;&#x4E00;&#x4E2A;&#x6EE1;&#x8DB3;&#x6761;&#x4EF6;&#x7684;&#x5BF9;&#x8C61;&#x6570;&#x7EC4;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">collection.find({&#x201C;name&#x201D;:&#x201D;Lucy&#x201D;})</div></pre></td></tr></table></figure>
+<p>.count() &#x7EDF;&#x8BA1;&#x7ED3;&#x679C;&#x603B;&#x6761;&#x6570;&#xFF1A;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">collection.find().count() //&#x7B49;&#x540C;&#x4E8E;collection.count()</div><div class="line">collection.find({&#x201C;name&#x201D;:&#x201D;Lucy&#x201D;}).count()</div></pre></td></tr></table></figure>
+<p>&#x5C06;&#x67E5;&#x8BE2;&#x7ED3;&#x679C;&#x6309;&#x6761;&#x4EF6;&#x6392;&#x5E8F;&#xFF1A;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">collection.find().sort(&quot;age&quot;)  //&#x9ED8;&#x8BA4;&#xFF0C;&#x5347;&#x5E8F;</div><div class="line">collection.find().sort(&quot;age&quot;, pymongo.ASCENDING)   //&#x5347;&#x5E8F;</div><div class="line">collection.find().sort(&quot;age&quot;, pymongo.DESCENDING)  //&#x964D;&#x5E8F;</div></pre></td></tr></table></figure>
+<h3 id="&#x66F4;&#x65B0;&#x6570;&#x636E;">&#x66F4;&#x65B0;&#x6570;&#x636E;</h3>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">temp = collection.find_one({&quot;name&quot;:&quot;Lucy&quot;})</div><div class="line">temp2 = temp.copy()</div><div class="line">temp[&quot;name&quot;] = &quot;Jordan&quot;</div><div class="line">collection.save(temp)   //&#x6216; .update() &#xFF0C;&#x6CE8;&#x610F;&#x53C2;&#x6570;&#x5F62;&#x5F0F;</div><div class="line">collection.update(temp, temp2)  //&#x5C06;temp&#x66F4;&#x65B0;&#x4E3A;temp2</div></pre></td></tr></table></figure>
+<h3 id="&#x5220;&#x9664;&#x6570;&#x636E;">&#x5220;&#x9664;&#x6570;&#x636E;</h3>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">collection.remove(temp)//&#x5373;&#x4FBF;&#x8BE5;temp&#x4E0D;&#x5B58;&#x5728;&#x4E5F;&#x4E0D;&#x4F1A;&#x62A5;&#x9519;</div><div class="line">collection.delete_one(temp)</div><div class="line">collection.delete_many(temp) //&#x4E0E; .insert_many() &#x4E0D;&#x540C;&#xFF0C;&#x5728;temp&#x4E0D;&#x662F;list&#x7C7B;&#x578B;&#x65F6;&#x4E5F;&#x4E0D;&#x4F1A;&#x62A5;&#x9519;</div></pre></td></tr></table></figure>
 
       
     </div>
@@ -437,7 +433,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/hexo/" rel="tag"># hexo</a>
+            <a href="/tags/python/" rel="tag"># python</a>
+          
+            <a href="/tags/MongoDB/" rel="tag"># MongoDB</a>
           
         </div>
       
@@ -450,15 +448,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2017/04/19/docker/" rel="next" title="docker常用命令">
+                <i class="fa fa-chevron-left"></i> docker常用命令
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/03/28/NTUEE-ML-2016/" rel="prev" title="NTUEE ML 2016 学习笔记(三)">
-                NTUEE ML 2016 学习笔记(三) <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -587,7 +585,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#简介"><span class="nav-number">1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#环境"><span class="nav-number">2.</span> <span class="nav-text">环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装"><span class="nav-number">3.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#主题"><span class="nav-number">4.</span> <span class="nav-text">主题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置"><span class="nav-number">5.</span> <span class="nav-text">配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#插件"><span class="nav-number">6.</span> <span class="nav-text">插件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常见问题"><span class="nav-number">7.</span> <span class="nav-text">常见问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考链接"><span class="nav-number">8.</span> <span class="nav-text">参考链接</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#pymongo操作mongodb常用命令"><span class="nav-number">1.</span> <span class="nav-text">pymongo操作MongoDB常用命令</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装-pymongo"><span class="nav-number">1.0.1.</span> <span class="nav-text">安装 pymongo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#引入pymongo"><span class="nav-number">1.0.2.</span> <span class="nav-text">引入pymongo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#连接mongodb"><span class="nav-number">1.0.3.</span> <span class="nav-text">连接mongoDB</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#指定将要进行操作的database和collection"><span class="nav-number">1.0.4.</span> <span class="nav-text">指定将要进行操作的database和collection：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#插入数据"><span class="nav-number">1.0.5.</span> <span class="nav-text">插入数据</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查询数据"><span class="nav-number">1.0.6.</span> <span class="nav-text">查询数据</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#更新数据"><span class="nav-number">1.0.7.</span> <span class="nav-text">更新数据</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#删除数据"><span class="nav-number">1.0.8.</span> <span class="nav-text">删除数据</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
