@@ -317,28 +317,6 @@
           </span>
 
           
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/NTUEE-ML-2016-学习笔记/" itemprop="url" rel="index">
-                    <span itemprop="name">NTUEE ML 2016 学习笔记</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
 
           
             
@@ -540,6 +518,149 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#x67E5;&#x770B;&#x5BB9;&#x5668;&#x7684;&#x5185;&#x90E8;IP</div><div class="line"># docker inspect --format=&apos;{{.NetworkSettings.IPAddress}}&apos; $CONTAINER_ID</div><div class="line">172.17.42.35</div></pre></td></tr></table></figure>
 <h3 id="&#x5220;&#x9664;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;containerimagermrmi">&#x5220;&#x9664;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;container&#x3001;image&#xFF08;rm&#x3001;rmi&#xFF09;</h3>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div></pre></td><td class="code"><pre><div class="line"># docker images            &lt;==</div><div class="line">ubuntu            13.10        195eb90b5349       4 months ago       184.6 MB</div><div class="line">ubuntu            saucy        195eb90b5349       4 months ago       184.6 MB</div><div class="line">seanlook/ubuntu   rm_test      195eb90b5349       4 months ago       184.6 MB</div><div class="line"></div><div class="line">&#x4F7F;&#x7528;195eb90b5349&#x542F;&#x52A8;&#x3001;&#x505C;&#x6B62;&#x4E00;&#x4E2A;&#x5BB9;&#x5668;&#x540E;&#xFF0C;&#x5220;&#x9664;&#x8FD9;&#x4E2A;&#x955C;&#x50CF;</div><div class="line"># docker rmi 195eb90b5349</div><div class="line">Error response from daemon: Conflict, cannot delete image 195eb90b5349 because it is </div><div class="line">tagged in multiple repositories, use -f to force</div><div class="line">2014/11/04 14:19:00 Error: failed to remove one or more images</div><div class="line"></div><div class="line">&#x5220;&#x9664;seanlook&#x4ED3;&#x5E93;&#x4E2D;&#x7684;tag     &lt;==</div><div class="line"># docker rmi seanlook/ubuntu:rm_test</div><div class="line">Untagged: seanlook/ubuntu:rm_test</div><div class="line"></div><div class="line">&#x73B0;&#x5728;&#x5220;&#x9664;&#x955C;&#x50CF;&#xFF0C;&#x8FD8;&#x4F1A;&#x7531;&#x4E8E;container&#x7684;&#x5B58;&#x5728;&#x4E0D;&#x80FD;rmi</div><div class="line"># docker rmi 195eb90b5349</div><div class="line">Error response from daemon: Conflict, cannot delete 195eb90b5349 because the </div><div class="line"> container eef3648a6e77 is using it, use -f to force</div><div class="line">2014/11/04 14:24:15 Error: failed to remove one or more images</div><div class="line"></div><div class="line">&#x5148;&#x5220;&#x9664;&#x7531;&#x8FD9;&#x4E2A;&#x955C;&#x50CF;&#x542F;&#x52A8;&#x7684;&#x5BB9;&#x5668;    &lt;==</div><div class="line"># docker rm eef3648a6e77</div><div class="line"></div><div class="line">&#x5220;&#x9664;&#x955C;&#x50CF;                    &lt;==</div><div class="line"># docker rmi 195eb90b5349</div><div class="line">Deleted: 195eb90b534950d334188c3627f860fbdf898e224d8a0a11ec54ff453175e081</div><div class="line">Deleted: 209ea56fda6dc2fb013e4d1e40cb678b2af91d1b54a71529f7df0bd867adc961</div><div class="line">Deleted: 0f4aac48388f5d65a725ccf8e7caada42f136026c566528a5ee9b02467dac90a</div><div class="line">Deleted: fae16849ebe23b48f2bedcc08aaabd45408c62b531ffd8d3088592043d5e7364</div><div class="line">Deleted: f127542f0b6191e99bb015b672f5cf48fa79d974784ac8090b11aeac184eaaff</div></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://charonx.github.io/2017/03/28/NTUEE-ML-2016/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="charon">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="charon's blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/03/28/NTUEE-ML-2016/" itemprop="url">
+                  NTUEE ML 2016 学习笔记(三)
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-28T09:22:43+08:00">
+                2017-03-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/NTUEE-ML-2016-学习笔记/" itemprop="url" rel="index">
+                    <span itemprop="name">NTUEE ML 2016 学习笔记</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="lecture-1-gradient-descent">Lecture 1: Gradient Descent</h1>
 
           
         
@@ -828,149 +949,6 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://charonx.github.io/2017/03/28/NTUEE-ML-2016/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="charon">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="charon's blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2017/03/28/NTUEE-ML-2016/" itemprop="url">
-                  NTUEE ML 2016 学习笔记(三)
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-28T09:22:43+08:00">
-                2017-03-28
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/NTUEE-ML-2016-学习笔记/" itemprop="url" rel="index">
-                    <span itemprop="name">NTUEE ML 2016 学习笔记</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="lecture-1-gradient-descent">Lecture 1: Gradient Descent</h1>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://charonx.github.io/2017/03/25/hexo/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1177,7 +1155,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
