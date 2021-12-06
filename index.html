@@ -1,1347 +1,442 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+	<meta name="generator" content="Hugo 0.89.4" /><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TLVJGH5');</script>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Lorem ipsum dolor sit amet, consectetur adipiscing elit.'><title>-I2O-&#39;s Blog</title>
 
+<link rel='canonical' href='https://charonx.github.io/'>
 
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='-I2O-&#39;s Blog'>
+<meta property='og:description' content='Lorem ipsum dolor sit amet, consectetur adipiscing elit.'>
+<meta property='og:url' content='https://charonx.github.io/'>
+<meta property='og:site_name' content='-I2O-&#39;s Blog'>
+<meta property='og:type' content='website'><meta property='og:updated_time' content=' 2021-12-03T00:00:00&#43;00:00 '/>
+<meta name="twitter:title" content="-I2O-&#39;s Blog">
+<meta name="twitter:description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit."><link rel="alternate" type="application/rss&#43;xml" href="https://charonx.github.io/index.xml">
+    </head>
+    <body class="">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
 
-  
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
 
-
-<html class="theme-next mist use-motion" lang="zh-Hans">
-<head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
-
-
-
-
-  
-  
-  
-  
-
-  
-    
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-    
-    
-    <!--<link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">-->
-  
-
-
-
-
-
-
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
-
-
-  <meta name="keywords" content="Hexo, NexT, charon.z@qq.com" />
-
-
-
-
-
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
-
-
-
-
-
-
-<meta property="og:type" content="website">
-<meta property="og:title" content="charon's blog">
-<meta property="og:url" content="http://charonx.github.io/index.html">
-<meta property="og:site_name" content="charon's blog">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="charon's blog">
-
-
-
-<script type="text/javascript" id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Mist',
-    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
-    fancybox: true,
-    motion: true,
-    duoshuo: {
-      userId: '0',
-      author: '博主'
-    },
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
-  };
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
 </script>
-
-
-
-  <link rel="canonical" href="http://charonx.github.io/"/>
-
-
-
-
-
-  <title> charon's blog </title>
-</head>
-
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-    
-  
-
-  <div class="container sidebar-position-left 
-   page-home 
- ">
-    <div class="headband"></div>
-
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
-    
-
-    <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
-        <!--<span class="logo-line-before"><i></i></span>-->
-        <span class="site-title">charon's blog</span>
-        <span class="logo-line-after"><i></i></span>
-      </a>
-    </div>
-      
-        <p class="site-subtitle"></p>
-      
-  </div>
-
-  <div class="site-nav-toggle">
-    <button>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
     </button>
-  </div>
-</div>
 
-<nav class="site-nav">
-  
-
-  
-    <ul id="menu" class="menu">
-      
+    <header class="site-info">
         
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            首页
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-categories">
-          <a href="/categories" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
-            
-            分类
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-about">
-          <a href="/about" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
-            
-            关于
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            归档
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            标签
-          </a>
-        </li>
-      
-
-      
-    </ul>
-  
-
-  
-</nav>
-
-
-
- </div>
-    </header>
-
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          <div id="content" class="content">
-            
-  <section id="posts" class="posts-expand">
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://charonx.github.io/2017/05/17/pymongo/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="charon">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="charon's blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
+            <figure class="site-avatar">
                 
-                <a class="post-title-link" href="/2017/05/17/pymongo/" itemprop="url">
-                  通过pymongo操作MongoDB
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-17T09:45:57+08:00">
-                2017-05-17
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="pymongo&#x64CD;&#x4F5C;mongodb&#x5E38;&#x7528;&#x547D;&#x4EE4;">pymongo&#x64CD;&#x4F5C;MongoDB&#x5E38;&#x7528;&#x547D;&#x4EE4;</h1>
-<h3 id="&#x5B89;&#x88C5;-pymongo">&#x5B89;&#x88C5; pymongo</h3>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pip install pymongo (&#x6216;&#x8005; pip3 install pymongo)</div></pre></td></tr></table></figure>
-<h3 id="&#x5F15;&#x5165;pymongo">&#x5F15;&#x5165;pymongo</h3>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">from pymongo import MongoClient</div></pre></td></tr></table></figure>
-<h3 id="&#x8FDE;&#x63A5;mongodb">&#x8FDE;&#x63A5;mongoDB</h3>
-<ol style="list-style-type: decimal">
-<li>&#x901A;&#x8FC7;host+port&#x7684;&#x65B9;&#x5F0F;&#xFF1A;</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">client = MongoClient(host,port)</div></pre></td></tr></table></figure>
-<ol start="2" style="list-style-type: decimal">
-<li>&#x901A;&#x8FC7;uri&#x7684;&#x65B9;&#x5F0F;&#xFF1A;</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">client = MongoClient(uri)</div><div class="line"># uri&#x7684;&#x683C;&#x5F0F;&#xFF1A;</div><div class="line">uri = &apos;mongodb://&apos; + user + &apos;:&apos; + pwd + &apos;@&apos; + server + &apos;:&apos; + port +&apos;/&apos;+ db_name</div></pre></td></tr></table></figure>
-<h3 id="&#x6307;&#x5B9A;&#x5C06;&#x8981;&#x8FDB;&#x884C;&#x64CD;&#x4F5C;&#x7684;database&#x548C;collection">&#x6307;&#x5B9A;&#x5C06;&#x8981;&#x8FDB;&#x884C;&#x64CD;&#x4F5C;&#x7684;database&#x548C;collection&#xFF1A;</h3>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">db = client.test_db</div><div class="line">collection = db.test_collection</div></pre></td></tr></table></figure>
-<h3 id="&#x63D2;&#x5165;&#x6570;&#x636E;">&#x63D2;&#x5165;&#x6570;&#x636E;</h3>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">mydict = {&#x201C;name&#x201D;:&#x201D;Lucy&#x201D;, &#x201C;sex&#x201D;:&#x201D;female&#x201D;,&#x201D;job&#x201D;:&#x201D;nurse&#x201D;}</div><div class="line">collection.insert(mydict)</div></pre></td></tr></table></figure>
-<h3 id="&#x67E5;&#x8BE2;&#x6570;&#x636E;">&#x67E5;&#x8BE2;&#x6570;&#x636E;</h3>
-<p>.find_one() &#x663E;&#x793A;&#x6EE1;&#x8DB3;&#x6761;&#x4EF6;&#x7684;&#x7B2C;&#x4E00;&#x4E2A; collection&#xFF0C;find() &#x7684;&#x7ED3;&#x679C;&#x5219;&#x662F;&#x4E00;&#x4E2A;&#x6EE1;&#x8DB3;&#x6761;&#x4EF6;&#x7684;&#x5BF9;&#x8C61;&#x6570;&#x7EC4;</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">collection.find({&#x201C;name&#x201D;:&#x201D;Lucy&#x201D;})</div></pre></td></tr></table></figure>
-<p>.count() &#x7EDF;&#x8BA1;&#x7ED3;&#x679C;&#x603B;&#x6761;&#x6570;&#xFF1A;</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">collection.find().count() //&#x7B49;&#x540C;&#x4E8E;collection.count()</div><div class="line">collection.find({&#x201C;name&#x201D;:&#x201D;Lucy&#x201D;}).count()</div></pre></td></tr></table></figure>
-<p>&#x5C06;&#x67E5;&#x8BE2;&#x7ED3;&#x679C;&#x6309;&#x6761;&#x4EF6;&#x6392;&#x5E8F;&#xFF1A;</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">collection.find().sort(&quot;age&quot;)  //&#x9ED8;&#x8BA4;&#xFF0C;&#x5347;&#x5E8F;</div><div class="line">collection.find().sort(&quot;age&quot;, pymongo.ASCENDING)   //&#x5347;&#x5E8F;</div><div class="line">collection.find().sort(&quot;age&quot;, pymongo.DESCENDING)  //&#x964D;&#x5E8F;</div></pre></td></tr></table></figure>
-<h3 id="&#x66F4;&#x65B0;&#x6570;&#x636E;">&#x66F4;&#x65B0;&#x6570;&#x636E;</h3>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">temp = collection.find_one({&quot;name&quot;:&quot;Lucy&quot;})</div><div class="line">temp2 = temp.copy()</div><div class="line">temp[&quot;name&quot;] = &quot;Jordan&quot;</div><div class="line">collection.save(temp)   //&#x6216; .update() &#xFF0C;&#x6CE8;&#x610F;&#x53C2;&#x6570;&#x5F62;&#x5F0F;</div><div class="line">collection.update(temp, temp2)  //&#x5C06;temp&#x66F4;&#x65B0;&#x4E3A;temp2</div></pre></td></tr></table></figure>
-<h3 id="&#x5220;&#x9664;&#x6570;&#x636E;">&#x5220;&#x9664;&#x6570;&#x636E;</h3>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">collection.remove(temp)//&#x5373;&#x4FBF;&#x8BE5;temp&#x4E0D;&#x5B58;&#x5728;&#x4E5F;&#x4E0D;&#x4F1A;&#x62A5;&#x9519;</div><div class="line">collection.delete_one(temp)</div><div class="line">collection.delete_many(temp) //&#x4E0E; .insert_many() &#x4E0D;&#x540C;&#xFF0C;&#x5728;temp&#x4E0D;&#x662F;list&#x7C7B;&#x578B;&#x65F6;&#x4E5F;&#x4E0D;&#x4F1A;&#x62A5;&#x9519;</div></pre></td></tr></table></figure>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://charonx.github.io/2017/04/19/docker/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="charon">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="charon's blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu18b3f46d44810502d416e03d40d24ce3_172540_300x0_resize_q75_box.jpg" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
                 
-                <a class="post-title-link" href="/2017/04/19/docker/" itemprop="url">
-                  docker常用命令
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-19T11:17:22+08:00">
-                2017-04-19
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="docker&#x5E38;&#x7528;&#x547D;&#x4EE4;">docker&#x5E38;&#x7528;&#x547D;&#x4EE4;</h1>
-<h3 id="&#x5217;&#x51FA;&#x673A;&#x5668;&#x4E0A;&#x7684;&#x955C;&#x50CF;images">&#x5217;&#x51FA;&#x673A;&#x5668;&#x4E0A;&#x7684;&#x955C;&#x50CF;&#xFF08;images&#xFF09;</h3>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"># docker images</div></pre></td></tr></table></figure>
-<h3 id="&#x4ECE;docker-registry-server-&#x4E2D;&#x4E0B;&#x62C9;image&#x6216;repositorypull">&#x4ECE;docker registry server &#x4E2D;&#x4E0B;&#x62C9;image&#x6216;repository&#xFF08;pull&#xFF09;</h3>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"># docker pull centos</div></pre></td></tr></table></figure>
-<h3 id="&#x63A8;&#x9001;&#x4E00;&#x4E2A;image&#x6216;repository&#x5230;registrypush">&#x63A8;&#x9001;&#x4E00;&#x4E2A;image&#x6216;repository&#x5230;registry&#xFF08;push&#xFF09;</h3>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"># docker push seanlook/mongo</div><div class="line"># docker push registry.tp-link.net:5000/mongo:2014-10-27</div></pre></td></tr></table></figure>
-<h3 id="&#x4ECE;image&#x542F;&#x52A8;&#x4E00;&#x4E2A;containerrun">&#x4ECE;image&#x542F;&#x52A8;&#x4E00;&#x4E2A;container&#xFF08;run&#xFF09;</h3>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"># docker run ubuntu</div></pre></td></tr></table></figure>
-<h3 id="&#x4F7F;&#x7528;image&#x521B;&#x5EFA;container&#x5E76;&#x8FDB;&#x5165;&#x4EA4;&#x4E92;&#x6A21;&#x5F0F;-login-shell&#x662F;binbash">&#x4F7F;&#x7528;image&#x521B;&#x5EFA;container&#x5E76;&#x8FDB;&#x5165;&#x4EA4;&#x4E92;&#x6A21;&#x5F0F;, login shell&#x662F;/bin/bash</h3>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"># docker run -i -t --name mytest centos:centos6 /bin/bash</div></pre></td></tr></table></figure>
-<h3 id="&#x6620;&#x5C04;host&#x5230;container&#x7684;&#x7AEF;&#x53E3;&#x548C;&#x76EE;&#x5F55;">&#x6620;&#x5C04;host&#x5230;container&#x7684;&#x7AEF;&#x53E3;&#x548C;&#x76EE;&#x5F55;</h3>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"># docker run -d -p 3306:3306 -v /data/var/mysql/:/var/lib/mysql -v /data/local/my.cnf:/etc/mysql/my.cnf mysql</div></pre></td></tr></table></figure>
-<h3 id="&#x5C06;&#x4E00;&#x4E2A;container&#x56FA;&#x5316;&#x4E3A;&#x4E00;&#x4E2A;&#x65B0;&#x7684;imagecommit">&#x5C06;&#x4E00;&#x4E2A;container&#x56FA;&#x5316;&#x4E3A;&#x4E00;&#x4E2A;&#x65B0;&#x7684;image&#xFF08;commit&#xFF09;</h3>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">&#x67E5;&#x770B;&#x521A;&#x8FD0;&#x884C;&#x8FC7;&#x7684;&#x5BB9;&#x5668;</div><div class="line"># docker ps -l</div><div class="line">CONTAINER ID   IMAGE     COMMAND      CREATED       STATUS        PORTS   NAMES</div><div class="line">c9fdf26326c9   nginx:1   nginx -g..   3 hours ago   Exited (0)..     nginx_test</div><div class="line"></div><div class="line">&#x542F;&#x52A8;&#x4E00;&#x4E2A;&#x5DF2;&#x5B58;&#x5728;&#x7684;&#x5BB9;&#x5668;&#xFF08;run&#x662F;&#x4ECE;image&#x65B0;&#x5EFA;&#x5BB9;&#x5668;&#x540E;&#x518D;&#x542F;&#x52A8;&#xFF09;&#xFF0C;&#x4EE5;&#x4E0B;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;docker start nginx_test&#x4EE3;&#x66FF;  </div><div class="line">[root@hostname docker]# docker start c9fdf26326c9</div><div class="line">c9fdf26326c9</div><div class="line"></div><div class="line"></div><div class="line">docker run -i -t --sig-proxy=false 21ffe545748baf /bin/bash</div><div class="line">nginx&#x670D;&#x52A1;&#x6CA1;&#x6709;&#x542F;&#x52A8;</div><div class="line"></div><div class="line"></div><div class="line"># docker commit -m &quot;some tools installed&quot; fcbd0a5348ca seanlook/ubuntu:14.10_tutorial</div><div class="line">fe022762070b09866eaab47bc943ccb796e53f3f416abf3f2327481b446a9503</div></pre></td></tr></table></figure>
-<h3 id="&#x67E5;&#x770B;&#x8FD0;&#x884C;&#x4E2D;&#x7684;&#x5BB9;&#x5668;">&#x67E5;&#x770B;&#x8FD0;&#x884C;&#x4E2D;&#x7684;&#x5BB9;&#x5668;</h3>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"># docker ps</div></pre></td></tr></table></figure>
-<h3 id="&#x67E5;&#x770B;&#x6240;&#x6709;&#x5BB9;&#x5668;">&#x67E5;&#x770B;&#x6240;&#x6709;&#x5BB9;&#x5668;</h3>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"># docker ps -a</div></pre></td></tr></table></figure>
-<h3 id="&#x5F00;&#x542F;&#x505C;&#x6B62;&#x91CD;&#x542F;containerstartstoprestart">&#x5F00;&#x542F;/&#x505C;&#x6B62;/&#x91CD;&#x542F;container&#xFF08;start/stop/restart&#xFF09;</h3>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">CONTAINER_ID=$(docker start &lt;containner_id&gt;)</div><div class="line">docker stop $CONTAINER_ID</div><div class="line">docker restart $CONTAINER_ID</div></pre></td></tr></table></figure>
-<h3 id="&#x67E5;&#x770B;image&#x6216;container&#x7684;&#x5E95;&#x5C42;&#x4FE1;&#x606F;inspect">&#x67E5;&#x770B;image&#x6216;container&#x7684;&#x5E95;&#x5C42;&#x4FE1;&#x606F;&#xFF08;inspect&#xFF09;</h3>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#x67E5;&#x770B;&#x5BB9;&#x5668;&#x7684;&#x5185;&#x90E8;IP</div><div class="line"># docker inspect --format=&apos;{{.NetworkSettings.IPAddress}}&apos; $CONTAINER_ID</div><div class="line">172.17.42.35</div></pre></td></tr></table></figure>
-<h3 id="&#x5220;&#x9664;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;containerimagermrmi">&#x5220;&#x9664;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;container&#x3001;image&#xFF08;rm&#x3001;rmi&#xFF09;</h3>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div></pre></td><td class="code"><pre><div class="line"># docker images            &lt;==</div><div class="line">ubuntu            13.10        195eb90b5349       4 months ago       184.6 MB</div><div class="line">ubuntu            saucy        195eb90b5349       4 months ago       184.6 MB</div><div class="line">seanlook/ubuntu   rm_test      195eb90b5349       4 months ago       184.6 MB</div><div class="line"></div><div class="line">&#x4F7F;&#x7528;195eb90b5349&#x542F;&#x52A8;&#x3001;&#x505C;&#x6B62;&#x4E00;&#x4E2A;&#x5BB9;&#x5668;&#x540E;&#xFF0C;&#x5220;&#x9664;&#x8FD9;&#x4E2A;&#x955C;&#x50CF;</div><div class="line"># docker rmi 195eb90b5349</div><div class="line">Error response from daemon: Conflict, cannot delete image 195eb90b5349 because it is </div><div class="line">tagged in multiple repositories, use -f to force</div><div class="line">2014/11/04 14:19:00 Error: failed to remove one or more images</div><div class="line"></div><div class="line">&#x5220;&#x9664;seanlook&#x4ED3;&#x5E93;&#x4E2D;&#x7684;tag     &lt;==</div><div class="line"># docker rmi seanlook/ubuntu:rm_test</div><div class="line">Untagged: seanlook/ubuntu:rm_test</div><div class="line"></div><div class="line">&#x73B0;&#x5728;&#x5220;&#x9664;&#x955C;&#x50CF;&#xFF0C;&#x8FD8;&#x4F1A;&#x7531;&#x4E8E;container&#x7684;&#x5B58;&#x5728;&#x4E0D;&#x80FD;rmi</div><div class="line"># docker rmi 195eb90b5349</div><div class="line">Error response from daemon: Conflict, cannot delete 195eb90b5349 because the </div><div class="line"> container eef3648a6e77 is using it, use -f to force</div><div class="line">2014/11/04 14:24:15 Error: failed to remove one or more images</div><div class="line"></div><div class="line">&#x5148;&#x5220;&#x9664;&#x7531;&#x8FD9;&#x4E2A;&#x955C;&#x50CF;&#x542F;&#x52A8;&#x7684;&#x5BB9;&#x5668;    &lt;==</div><div class="line"># docker rm eef3648a6e77</div><div class="line"></div><div class="line">&#x5220;&#x9664;&#x955C;&#x50CF;                    &lt;==</div><div class="line"># docker rmi 195eb90b5349</div><div class="line">Deleted: 195eb90b534950d334188c3627f860fbdf898e224d8a0a11ec54ff453175e081</div><div class="line">Deleted: 209ea56fda6dc2fb013e4d1e40cb678b2af91d1b54a71529f7df0bd867adc961</div><div class="line">Deleted: 0f4aac48388f5d65a725ccf8e7caada42f136026c566528a5ee9b02467dac90a</div><div class="line">Deleted: fae16849ebe23b48f2bedcc08aaabd45408c62b531ffd8d3088592043d5e7364</div><div class="line">Deleted: f127542f0b6191e99bb015b672f5cf48fa79d974784ac8090b11aeac184eaaff</div></pre></td></tr></table></figure>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://charonx.github.io/2017/03/28/NTUEE-ML-2016/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="charon">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="charon's blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2017/03/28/NTUEE-ML-2016/" itemprop="url">
-                  NTUEE ML 2016 学习笔记(三)
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-28T09:22:43+08:00">
-                2017-03-28
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/NTUEE-ML-2016-学习笔记/" itemprop="url" rel="index">
-                    <span itemprop="name">NTUEE ML 2016 学习笔记</span>
-                  </a>
-                </span>
 
                 
+                    <span class="emoji">🍥</span>
                 
-              
-            </span>
-          
-
-          
+            </figure>
             
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="lecture-1-gradient-descent">Lecture 1: Gradient Descent</h1>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://charonx.github.io/2017/03/28/NTUEE-ML-2016-01/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="charon">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="charon's blog">
-    </span>
-
-    
-      <header class="post-header">
-
         
         
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
+        <h1 class="site-name"><a href="/">-I2O-&#39;s Blog</a></h1>
+        <h2 class="site-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2><ol class="social-menu">
                 
-                <a class="post-title-link" href="/2017/03/28/NTUEE-ML-2016-01/" itemprop="url">
-                  NTUEE ML 2016 学习笔记(一)
-                </a>
-              
-            
-          </h1>
+                    <li>
+                        <a 
+                            href='https://github.com/charonX'
+                            target="_blank"
+                            title="GitHub"
+                        >
+                            
+                            
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                            
+                        </a>
+                    </li>
+                
+            </ol></header>
+
+    <ol class="menu" id="main-menu">
+        
+        
         
 
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-28T09:22:43+08:00">
-                2017-03-28
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/NTUEE-ML-2016-学习笔记/" itemprop="url" rel="index">
-                    <span itemprop="name">NTUEE ML 2016 学习笔记</span>
-                  </a>
-                </span>
-
+        <li >
+            <a href='/' >
                 
                 
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="lecture-1-regression">Lecture 1: Regression</h1>
-<h2 id="&#x7B80;&#x4ECB;">&#x7B80;&#x4ECB;</h2>
-<h3 id="&#x8BB2;&#x5E08;&#x7B80;&#x4ECB;">&#x8BB2;&#x5E08;&#x7B80;&#x4ECB;</h3>
-<p>&#x674E;&#x5B8F;&#x6BC5; ( Hung-yi Lee )</p>
-<p>&#x53F0;&#x6E7E;&#x5927;&#x5B66;&#x7535;&#x673A;&#x7CFB; / &#x52A9;&#x7406;&#x6559;&#x6388;</p>
-<p>&#x73B0;&#x4E3A;&#x53F0;&#x5927;&#x7535;&#x673A;&#x7CFB;&#x52A9;&#x7406;&#x6559;&#x6388;&#xFF0C;&#x4ED6;&#x7684;&#x7814;&#x7A76;&#x65B9;&#x5411;&#x4E0E;&#x5174;&#x8DA3;&#x662F;&#x4EE5;&#x673A;&#x5668;&#x5B66;&#x4E60;&#x6280;&#x672F;&#x8BA9;&#x673A;&#x5668;&#x8FA8;&#x8BC6;&#x5E76;&#x7406;&#x89E3;&#x8BED;&#x97F3;&#x8BAF;&#x53F7;&#x7684;&#x5185;&#x5BB9;&#x3002;&#x4EE5;&#x6DF1;&#x5EA6;&#x5B66;&#x4E60;&#x6280;&#x672F;&#x4E3A;&#x57FA;&#x77F3;&#xFF0C;&#x4ED6;&#x6B63;&#x81F4;&#x529B;&#x4E8E;&#x8BED;&#x97F3;&#x6570;&#x5B57;&#x5185;&#x5BB9;&#x641C;&#x5BFB;&#x3001;&#x8BED;&#x97F3;&#x6570;&#x5B57;&#x5185;&#x5BB9;&#x4E4B;&#x81EA;&#x52A8;&#x5316;&#x7EC4;&#x7EC7;&#x4EE5;&#x53CA;&#x4ECE;&#x8BED;&#x97F3;&#x6570;&#x5B57;&#x5185;&#x5BB9;&#x64B7;&#x53D6;&#x5173;&#x952E;&#x4FE1;&#x606F;&#x7B49;&#x524D;&#x77BB;&#x6027;&#x7814;&#x7A76;&#xFF0C;&#x8FD9;&#x4E9B;&#x6280;&#x672F;&#x6709;&#x5F88;&#x591A;&#x7684;&#x5E94;&#x7528;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;&#x4EBA;&#x673A;&#x4E92;&#x52A8;&#x3001;&#x95EE;&#x7B54;&#x7CFB;&#x7EDF;&#x3001;&#x667A;&#x80FD;&#x578B;&#x5728;&#x7EBF;&#x6559;&#x5B66;&#x5E73;&#x53F0;&#x7B49;&#x7B49;&#x3002;&#x4ED6;&#x66FE;&#x5728;&#x53F0;&#x5927;&#x5F00;&#x8BBE;&#x548C;&#x6DF1;&#x5EA6;&#x5B66;&#x4E60;&#x76F8;&#x5173;&#x7684;&#x8BFE;&#x7A0B;&#x300C;&#x673A;&#x5668;&#x5B66;&#x4E60;&#x53CA;&#x5176;&#x6DF1;&#x5C42;&#x4E0E;&#x7ED3;&#x6784;&#x5316;&#x300D;&#x3002;</p>
-<h3 id="&#x89C6;&#x9891;&#x5730;&#x5740;">&#x89C6;&#x9891;&#x5730;&#x5740;</h3>
-<p><a href="https://www.youtube.com/watch?v=fegAeph9UaA&amp;list=PLJV_el3uVTsPy9oCRY30oBPNLCo89yu49&amp;index=1" target="_blank" rel="external">youtube</a></p>
-<p><a href="http://www.bilibili.com/video/av9435648/" target="_blank" rel="external">bilibili</a> (&#x611F;&#x8C22;@Easy&#x5927;&#x5927;&#x642C;&#x8FD0;)</p>
-<h3 id="ppt&#x5730;&#x5740;">PPT&#x5730;&#x5740;</h3>
-<p><a href="http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2016/Lecture/Regression%20(v6).pdf" target="_blank" rel="external">pdf&#x6587;&#x4EF6;</a> &#xFF0C;&#x6253;&#x5F00;&#x53EF;&#x76F4;&#x63A5;&#x9884;&#x89C8;,&#x9700;&#x8981;&#x7FFB;&#x5899;</p>
-<h2 id="do-what">Do what</h2>
-<ol style="list-style-type: decimal">
-<li><p>&#x80A1;&#x7968;&#x9884;&#x6D4B;&#x7CFB;&#x7EDF;</p>
-<p>input: Function(&#x8D44;&#x6599;)</p>
-<p>output: &#x6307;&#x6570;&#x7684;&#x6DA8;&#x8DCC;</p></li>
-<li><p>&#x81EA;&#x52A8;&#x9A7E;&#x9A76;</p>
-<p>input: Function(&#x6536;&#x96C6;&#x5230;&#x7684;&#x4FE1;&#x53F7;)</p>
-<p>output: &#x65B9;&#x5411;&#x76D8;&#x8F6C;&#x52A8;&#x7684;&#x89D2;&#x5EA6;&#x53CA;&#x901F;&#x5EA6;</p></li>
-<li><p>&#x63A8;&#x8350;&#x7CFB;&#x7EDF;</p>
-<p>input: Function(&#x4F7F;&#x7528;&#x8005;A &#x5546;&#x54C1;B)</p>
-<p>output: &#x4F7F;&#x7528;&#x8005;&#x8D2D;&#x4E70;&#x5546;&#x54C1;B&#x7684;&#x53EF;&#x80FD;&#x6027;</p></li>
-</ol>
-<h2 id="&#x5B9E;&#x4F8B;&#x5206;&#x6790;-&#x9884;&#x6D4B;&#x7CBE;&#x7075;&#x5B9D;&#x53EF;&#x68A6;&#x8FDB;&#x5316;&#x540E;&#x7684;cp&#x503C;">&#x5B9E;&#x4F8B;&#x5206;&#x6790; &#x2013; &#x9884;&#x6D4B;&#x7CBE;&#x7075;&#x5B9D;&#x53EF;&#x68A6;&#x8FDB;&#x5316;&#x540E;&#x7684;CP&#x503C;</h2>
-<h2 id="&#x76EE;&#x6807;">&#x76EE;&#x6807;</h2>
-<p>&#x627E;&#x5230;&#x4E00;&#x4E2A;Function,&#x8F93;&#x5165;&#x4E00;&#x53EA;pokemon&#x7136;&#x540E;&#x8F93;&#x51FA;&#x8FD9;&#x53EA;pokemon&#x8FDB;&#x5316;&#x540E;&#x7684;CP&#x503C;</p>
-<div class="figure">
-<img src="/2017/03/28/NTUEE-ML-2016-01/a.png">
-
-</div>
-<ul>
-<li>&#x7528;X&#x6765;&#x8868;&#x793A;&#x4E00;&#x53EA;&#x8FDB;&#x5316;&#x524D;&#x7684;pokemon</li>
-<li>X<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mrow></mrow><mrow><mi>c</mi><mi>p</mi></mrow></msub></mrow><annotation encoding="application/x-tex">_{cp}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.15139200000000003em;"></span><span class="strut bottom" style="height:0.4375em;vertical-align:-0.286108em;"></span><span class="base textstyle uncramped"><span class="mord"><span></span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathit mtight">c</span><span class="mord mathit mtight">p</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span></span></span></span>&#x8868;&#x793A;&#x8FDB;&#x5316;&#x524D;&#x7684;CP&#x503C;</li>
-<li>X<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mrow></mrow><mrow><mi>s</mi></mrow></msub></mrow><annotation encoding="application/x-tex">_{s}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.151392em;"></span><span class="strut bottom" style="height:0.301392em;vertical-align:-0.15em;"></span><span class="base textstyle uncramped"><span class="mord"><span></span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathit mtight">s</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span></span></span></span> &#x8868;&#x793A;&#x7269;&#x79CD;</li>
-<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mrow></mrow><mrow><mi>h</mi><mi>p</mi></mrow></msub></mrow><annotation encoding="application/x-tex">_{hp}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.33610799999999996em;"></span><span class="strut bottom" style="height:0.6222159999999999em;vertical-align:-0.286108em;"></span><span class="base textstyle uncramped"><span class="mord"><span></span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathit mtight">h</span><span class="mord mathit mtight">p</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span></span></span></span> &#x8868;&#x793A;&#x751F;&#x547D;&#x503C;</li>
-<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mrow></mrow><mrow><mi>w</mi></mrow></msub></mrow><annotation encoding="application/x-tex">_{w}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.151392em;"></span><span class="strut bottom" style="height:0.301392em;vertical-align:-0.15em;"></span><span class="base textstyle uncramped"><span class="mord"><span></span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathit mtight" style="margin-right:0.02691em;">w</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span></span></span></span> &#x8868;&#x793A;&#x91CD;&#x91CF;</li>
-<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mrow></mrow><mrow><mi>h</mi></mrow></msub></mrow><annotation encoding="application/x-tex">_{h}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.33610799999999996em;"></span><span class="strut bottom" style="height:0.486108em;vertical-align:-0.15em;"></span><span class="base textstyle uncramped"><span class="mord"><span></span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathit mtight">h</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span></span></span></span> &#x8868;&#x793A;&#x9AD8;&#x5EA6;</li>
-<li>&#x8FDB;&#x5316;&#x540E;&#x7684;CP&#x503C;&#x7528;y&#x8868;&#x793A;</li>
-</ul>
-<blockquote>
-<p>&#x4E0B;&#x6807;&#x8868;&#x793A;&#x5B8C;&#x6574;&#x7684;&#x4E00;&#x4E2A;&#x4E8B;&#x7269;&#x4E0B;&#x7684;&#x67D0;&#x4E00;&#x4E2A;&#x90E8;&#x5206;</p>
-</blockquote>
-<h2 id="&#x600E;&#x4E48;&#x505A;">&#x600E;&#x4E48;&#x505A;</h2>
-<h3 id="&#x4E09;&#x4E2A;&#x6B65;&#x9AA4;">&#x4E09;&#x4E2A;&#x6B65;&#x9AA4;</h3>
-<ol style="list-style-type: decimal">
-<li>&#x627E;&#x4E00;&#x4E2A;Model&#xFF08;a set of function)</li>
-<li>&#x4ECE;function set&#x4E2D;&#x627E;&#x4E00;&#x4E2A;function&#x51FA;&#x6765;&#x5224;&#x65AD;&#x5B83;&#x7684;&#x597D;&#x574F;</li>
-<li>&#x4ECE;function set&#x4E2D;&#x627E;&#x4E00;&#x4E2A;&#x6700;&#x597D;&#x7684;function&#x51FA;&#x6765;</li>
-</ol>
-<p>Step 1&#xFF1A; Model</p>
-<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>y</mi><mo>=</mo><mi>b</mi><mo>+</mo><mi>w</mi><msub><mi>x</mi><mrow><mi>c</mi><mi>p</mi></mrow></msub></mrow><annotation encoding="application/x-tex">y = b + wx_{cp}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.980548em;vertical-align:-0.286108em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.03588em;">y</span><span class="mrel">=</span><span class="mord mathit">b</span><span class="mbin">+</span><span class="mord mathit" style="margin-right:0.02691em;">w</span><span class="mord"><span class="mord mathit">x</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathit mtight">c</span><span class="mord mathit mtight">p</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span></span></span></span> &#x4EE3;&#x8868;function set</p>
-<blockquote>
-<p>b,w &#x53EF;&#x4EE5;&#x4EE3;&#x5165;&#x4EFB;&#x4F55;&#x7684;&#x503C;</p>
-</blockquote>
-<p>&#x8FD9;&#x4E2A;model &#x53EF;&#x4EE5;&#x79F0;&#x4E3A;&#x4E00;&#x4E2A;Linear model</p>
-<p>Linear model: <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>y</mi><mo>=</mo><mi>b</mi><mo>+</mo><mo>&#x2211;</mo><msub><mi>w</mi><mrow><mi>i</mi></mrow></msub><msub><mi>x</mi><mrow><mi>i</mi></mrow></msub></mrow><annotation encoding="application/x-tex">y=b+\sum w_{i}x_{i}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1.00001em;vertical-align:-0.25001em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.03588em;">y</span><span class="mrel">=</span><span class="mord mathit">b</span><span class="mbin">+</span><span class="mop op-symbol small-op" style="top:-0.0000050000000000050004em;">&#x2211;</span><span class="mord"><span class="mord mathit" style="margin-right:0.02691em;">w</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.02691em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathit mtight">i</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span><span class="mord"><span class="mord mathit">x</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathit mtight">i</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span></span></span></span></p>
-<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>x</mi><mrow><mi>i</mi></mrow></msub></mrow><annotation encoding="application/x-tex">x_{i}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="base textstyle uncramped"><span class="mord"><span class="mord mathit">x</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathit mtight">i</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span></span></span></span>: an attribute of input &#x2013;&gt; feature</p>
-<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>w</mi><mrow><mi>i</mi></mrow></msub></mrow><annotation encoding="application/x-tex">w_{i}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="base textstyle uncramped"><span class="mord"><span class="mord mathit" style="margin-right:0.02691em;">w</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.02691em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathit mtight">i</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span></span></span></span>: weight(&#x6743;&#x91CD;)</p>
-<p>b: bias (&#x504F;&#x5DEE;)</p>
-<p>Step 2: Goodness of Function</p>
-<blockquote>
-<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>x</mi><mn>1</mn></msup></mrow><annotation encoding="application/x-tex">x^1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.8141079999999999em;"></span><span class="strut bottom" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord"><span class="mord mathit">x</span><span class="msupsub"><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle uncramped mtight"><span class="mord mathrm mtight">1</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span></span></span></span>:&#x4E0A;&#x6807;&#x8868;&#x793A;&#x5B8C;&#x6574;&#x7684;object&#x7F16;&#x53F7;, <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mover accent="true"><mrow><mi>y</mi></mrow><mo>^</mo></mover><mn>1</mn></msup></mrow><annotation encoding="application/x-tex">\hat{y}^1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.8141079999999999em;"></span><span class="strut bottom" style="height:1.008548em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord"><span class="mord accent"><span class="vlist"><span style="top:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="mord textstyle cramped"><span class="mord mathit" style="margin-right:0.03588em;">y</span></span></span><span style="top:0em;margin-left:0.11112em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="accent-body"><span>^</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span><span class="msupsub"><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle uncramped mtight"><span class="mord mathrm mtight">1</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span></span></span></span>&#xFF1A;&#x8868;&#x793A;&#x4E00;&#x4E2A;&#x5B8C;&#x6574;&#x7684;Output Object,&#x8FD9;&#x91CC;&#x8868;&#x793A;&#x7684;&#x662F;&#x8FDB;&#x5316;&#x540E;&#x7684;CP&#x503C;</p>
-</blockquote>
-<p>Training Data: 10 pokemons</p>
-<p><img src="/2017/03/28/NTUEE-ML-2016-01/b.png"> <img src="/2017/03/28/NTUEE-ML-2016-01/f.png"></p>
-<p>&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;Loss function L: input: a function, output: how bad it is</p>
-<p>Step 3: Best Function <img src="/2017/03/28/NTUEE-ML-2016-01/c.png"> &#x7A77;&#x4E3E;&#x6240;&#x6709;&#x7684;(w,b),&#x5E26;&#x5165;&#x8FD9;&#x4E2A;Function&#x4E2D;&#xFF0C;output&#x5C31;&#x4F1A;&#x544A;&#x8BC9;&#x4F60;&#x6700;&#x597D;&#x7684;(w,b)</p>
-<h3 id="gradient-descent">Gradient Descent</h3>
-<p>Gradient Descent&#x4E0D;&#x6B62;&#x9002;&#x7528;&#x4E8E;&#x89E3;&#x5F53;&#x524D;&#x8FD9;&#x4E2A;Function, &#x53EA;&#x8981;&#x8FD9;&#x4E2A;L&#x662F;&#x53EF;&#x5FAE;&#x5206;&#x7684;&#xFF0C;Gradient Descent&#x5C31;&#x53EF;&#x4EE5;&#x5E2E;&#x52A9;&#x4F60;&#x89E3;&#x51B3;</p>
-<div class="figure">
-<img src="/2017/03/28/NTUEE-ML-2016-01/d.png">
-
-</div>
-<div class="figure">
-<img src="/2017/03/28/NTUEE-ML-2016-01/e.png">
-
-</div>
-<ol style="list-style-type: decimal">
-<li>&#x968F;&#x673A;&#x9009;&#x53D6;&#x4E00;&#x4E2A;&#x521D;&#x59CB;&#x7684;&#x70B9;</li>
-<li>&#x5728;&#x521D;&#x59CB;&#x7684;&#x8FD9;&#x4E2A;&#x70B9;&#x4E0A;&#x5BF9;loss function&#x5FAE;&#x5206;&#xFF0C;&#x6216;&#x8005;&#x627E;&#x5B83;&#x7684;&#x5207;&#x7EBF;&#x659C;&#x7387;</li>
-<li>learning rate &#x662F;&#x63D0;&#x524D;&#x5B9A;&#x597D;&#x7684;&#x6570;&#x503C;</li>
-<li>&#x53C2;&#x6570;&#x66F4;&#x65B0;&#x7684;&#x5E45;&#x5EA6;&#x53D6;&#x51B3;&#x4E8E;&#x5FAE;&#x5206;&#x7684;&#x7ED3;&#x679C;&#x548C;learning rate&#x7684;&#x5927;&#x5C0F;</li>
-<li>&#x91CD;&#x590D;&#x6267;&#x884C;&#x76F4;&#x5230;&#x627E;&#x5230;global optimal</li>
-<li>Linear model&#x4E0D;&#x5B58;&#x5728;local optimal</li>
-</ol>
-<h3 id="hows-the-results">How&#x2019;s the results?</h3>
-<h3 id="back-to-step-1-redesign-the-model">Back to step 1: Redesign the Model</h3>
-<h2 id="&#x77E5;&#x8BC6;&#x70B9;&#x53CA;&#x540D;&#x8BCD;">&#x77E5;&#x8BC6;&#x70B9;&#x53CA;&#x540D;&#x8BCD;</h2>
-<ol style="list-style-type: decimal">
-<li>Regreion</li>
-<li>Linear model</li>
-<li>feature</li>
-<li>Bias</li>
-<li>Error</li>
-<li>Variance</li>
-<li>overfitting</li>
-<li>Loss function L:</li>
-<li>Gradient Descent</li>
-<li>learning rate</li>
-<li>local optimal</li>
-<li>global optimal</li>
-</ol>
-<h2 id="&#x53C2;&#x8003;&#x94FE;&#x63A5;">&#x53C2;&#x8003;&#x94FE;&#x63A5;</h2>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://charonx.github.io/2017/03/25/hexo/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="charon">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="charon's blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/2017/03/25/hexo/" itemprop="url">
-                  hexo 环境搭建与配置（一）
-                </a>
-              
-            
-          </h1>
-        
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
 
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-25T19:48:23+08:00">
-                2017-03-25
-              </time>
-            
 
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/折腾/" itemprop="url" rel="index">
-                    <span itemprop="name">折腾</span>
-                  </a>
-                </span>
 
                 
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="简介">简介</h2>
-<pre><code>简略记录一下安装过程，提供一些参考的网站</code></pre>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/03/25/hexo/#more" rel="contents">
-              阅读全文 &raquo;
+                <span>Home</span>
             </a>
-          </div>
-          <!--/noindex-->
+        </li>
         
-      
-    </div>
+        
 
-    <div>
-      
-    </div>
+        <li >
+            <a href='/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
 
-    <div>
-      
-    </div>
 
-    <div>
-      
-    </div>
 
-    <footer class="post-footer">
-      
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
 
-      
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
 
-      
 
-      
-      
-        <div class="post-eof"></div>
-      
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+
+        
+            <li id="dark-mode-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <span>Dark Mode</span>
+            </li>
+        
+    </ol>
+</aside>
+<main class="main full-width">
+    
+    
+    
+    
+
+    <section class="article-list">
+        
+            
+<article class="">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E6%8A%80%E6%9C%AF/" >
+                技术
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/p/figma-%E4%BD%BF%E7%94%A8/">figma 使用</a>
+    </h2>
+
+    
+    <h3 class="article-subtitle">
+        基于 figma 开发产品原型
+    </h3>
+    
+
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Dec 03, 2021</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    1 minute read
+                </time>
+            </div>
+        
     </footer>
-  </article>
+    
+</div>
+</header>
+</article>
+        
+            
+<article class="">
+    <header class="article-header">
 
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E6%8A%80%E6%9C%AF/" >
+                技术
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/p/%E4%BB%8E-0-1-%E5%BC%80%E5%8F%91-chrome-extension%E4%B8%80/">从 0-1 开发 Chrome Extension（一）</a>
+    </h2>
 
     
-  </section>
+    <h3 class="article-subtitle">
+        基于 Manifest V3 的 manifest.json 配置略解
+    </h3>
+    
 
-  
-
-
-          </div>
-          
-
-
-          
-
-        </div>
+    
+    <footer class="article-time">
         
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
-  </div>
-
-  <aside id="sidebar" class="sidebar">
-    <div class="sidebar-inner">
-
-      
-
-      
-
-      <section class="site-overview sidebar-panel sidebar-panel-active">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" itemprop="image"
-               src="/images/avatar.gif"
-               alt="charon" />
-          <p class="site-author-name" itemprop="name">charon</p>
-           
-              <p class="site-description motion-element" itemprop="description"></p>
-          
-        </div>
-        <nav class="site-state motion-element">
-
-          
-            <div class="site-state-item site-state-posts">
-              <a href="/archives">
-                <span class="site-state-item-count">5</span>
-                <span class="site-state-item-name">日志</span>
-              </a>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Dec 02, 2021</time>
             </div>
-          
+        
 
-          
-            
-            
-            <div class="site-state-item site-state-categories">
-              <a href="/categories/index.html">
-                <span class="site-state-item-count">2</span>
-                <span class="site-state-item-name">分类</span>
-              </a>
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    1 minute read
+                </time>
             </div>
-          
-
-          
-            
-            
-            <div class="site-state-item site-state-tags">
-              <a href="/tags/index.html">
-                <span class="site-state-item-count">6</span>
-                <span class="site-state-item-name">标签</span>
-              </a>
-            </div>
-          
-
-        </nav>
-
         
-
-        <div class="links-of-author motion-element">
-          
-        </div>
-
-        
-        
-
-        
-        
-
-        
-
-
-      </section>
-
-      
-
-      
-
-    </div>
-  </aside>
-
-
-        
-      </div>
-    </main>
-
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright" >
-  
-  &copy; 
-  <span itemprop="copyrightYear">2017</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">charon</span>
-</div>
-
-
-<div class="powered-by">
-  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
-</div>
-
-<div class="theme-info">
-  主题 -
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Mist
-  </a>
-</div>
-
-
-        
-
-        
-      </div>
     </footer>
-
     
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
+</div>
+</header>
+</article>
         
-      </div>
+    </section>
+<footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2021 -I2O-&#39;s Blog
+    </section>
     
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.5.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
 
-  </div>
+            </main>
+    
+    
+    <aside class="sidebar right-sidebar sticky">
+        
+            <form action="/search/" class="search-form widget" >
+        <p>
+            <label>Search</label>
+            <input name="keyword" required placeholder="Type something..." />
+        
+            <button title="Search">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
 
-  
 
-<script type="text/javascript">
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
-  }
+
+            </button>
+        </p>
+    </form>
+        
+            <section class="widget archives">
+        <h2 class="widget-title section-title">Archives</h2>
+
+        
+        
+        
+        
+        
+        <div class="widget-archive--list">
+            <div class="archives-year">
+                    <a href="/archives/#2021">
+                        
+                            <span class="year">2021</span>
+                            <span class="count">2</span>
+                        
+                    </a> 
+                </div>
+            
+        </div>
+    </section>
+        
+            <section class="widget tagCloud">
+    <h2 class="widget-title section-title">Tags</h2>
+
+    <div class="tagCloud-tags">
+        
+            <a href="/tags/chrome-extension/" class="font_size_2">
+                Chrome Extension
+            </a>
+        
+            <a href="/tags/chrome-%E6%89%A9%E5%B1%95/" class="font_size_1">
+                Chrome 扩展
+            </a>
+        
+            <a href="/tags/chrome-%E6%8F%92%E4%BB%B6/" class="font_size_1">
+                Chrome 插件
+            </a>
+        
+    </div>
+</section>
+        
+    </aside>
+
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                defer="false"
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
 </script>
 
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-  
-  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-
-  
-  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  
-  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
-
-
-
-  
-  
-
-  
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
-
-
-
-  
-
-
-
-  
-
-
-
-
-	
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-  
-
-  
-
-  
-
-</body>
+    </body>
 </html>

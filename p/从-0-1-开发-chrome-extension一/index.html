@@ -6,20 +6,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-TLVJGH5');</script>
 <meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content=' bilibili:https://space.bilibili.com/3099886 github:https://github.com/charonX  '><title>About</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='基于 Manifest V3 的 manifest.json 配置略解'><title>从 0-1 开发 Chrome Extension（一）</title>
 
-<link rel='canonical' href='https://charonx.github.io/about/'>
+<link rel='canonical' href='https://charonx.github.io/p/%E4%BB%8E-0-1-%E5%BC%80%E5%8F%91-chrome-extension%E4%B8%80/'>
 
-<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='About'>
-<meta property='og:description' content=' bilibili:https://space.bilibili.com/3099886 github:https://github.com/charonX  '>
-<meta property='og:url' content='https://charonx.github.io/about/'>
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='从 0-1 开发 Chrome Extension（一）'>
+<meta property='og:description' content='基于 Manifest V3 的 manifest.json 配置略解'>
+<meta property='og:url' content='https://charonx.github.io/p/%E4%BB%8E-0-1-%E5%BC%80%E5%8F%91-chrome-extension%E4%B8%80/'>
 <meta property='og:site_name' content='-I2O-&#39;s Blog'>
-<meta property='og:type' content='article'><meta property='article:section' content='Page' /><meta property='article:published_time' content='2021-12-02T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2021-12-02T00:00:00&#43;00:00'/>
-<meta name="twitter:title" content="About">
-<meta name="twitter:description" content=" bilibili:https://space.bilibili.com/3099886 github:https://github.com/charonX  ">
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Chrome Extension' /><meta property='article:tag' content='Chrome 插件' /><meta property='article:tag' content='Chrome 扩展' /><meta property='article:published_time' content='2021-12-02T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2021-12-02T00:00:00&#43;00:00'/>
+<meta name="twitter:title" content="从 0-1 开发 Chrome Extension（一）">
+<meta name="twitter:description" content="基于 Manifest V3 的 manifest.json 配置略解">
     </head>
     <body class="
-    article-page 
+    article-page has-toc
 ">
     <script>
         (function() {
@@ -45,172 +45,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </script>
 <div class="container main-container flex 
     
-        on-phone--column extended
+        extended
     
 ">
     
-        <aside class="sidebar left-sidebar sticky">
-    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
-        <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-        </span>
-    </button>
-
-    <header class="site-info">
-        
-            
-            <figure class="site-avatar">
-                
-                    
-                    
-                    
-                        
-                        <img src="/img/avatar_hu18b3f46d44810502d416e03d40d24ce3_172540_300x0_resize_q75_box.jpg" width="300"
-                            height="300" class="site-logo" loading="lazy" alt="Avatar">
-                    
-                
-
-                
-                    <span class="emoji">🍥</span>
-                
-            </figure>
-            
-        
-        
-        <h1 class="site-name"><a href="/">-I2O-&#39;s Blog</a></h1>
-        <h2 class="site-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2><ol class="social-menu">
-                
-                    <li>
-                        <a 
-                            href='https://github.com/charonX'
-                            target="_blank"
-                            title="GitHub"
-                        >
-                            
-                            
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
-</svg>
-
-
-
-                            
-                        </a>
-                    </li>
-                
-            </ol></header>
-
-    <ol class="menu" id="main-menu">
-        
-        
-        
-
-        <li >
-            <a href='/' >
-                
-                
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <div id="article-toolbar">
+            <a href="/" class="back-home">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
-  <polyline points="5 12 3 12 12 3 21 12 19 12" />
-  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
-  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+  <polyline points="15 6 9 12 15 18" />
 </svg>
 
 
 
-                
-                <span>Home</span>
+                <span>Back</span>
             </a>
-        </li>
-        
-        
-
-        <li  class='current' >
-            <a href='/about/' >
-                
-                
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="12" cy="7" r="4" />
-  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-</svg>
-
-
-
-                
-                <span>About</span>
-            </a>
-        </li>
-        
-        
-
-        <li >
-            <a href='/archives/' >
-                
-                
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <rect x="3" y="4" width="18" height="4" rx="2" />
-  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
-  <line x1="10" y1="12" x2="14" y2="12" />
-</svg>
-
-
-
-                
-                <span>Archives</span>
-            </a>
-        </li>
-        
-        
-
-        <li >
-            <a href='/search/' >
-                
-                
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="10" cy="10" r="7" />
-  <line x1="21" y1="21" x2="15" y2="15" />
-</svg>
-
-
-
-                
-                <span>Search</span>
-            </a>
-        </li>
-        
-
-        
-            <li id="dark-mode-toggle">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="8" cy="12" r="2" />
-  <rect x="2" y="6" width="20" height="12" rx="6" />
-</svg>
-
-
-
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="16" cy="12" r="2" />
-  <rect x="2" y="6" width="20" height="12" rx="6" />
-</svg>
-
-
-
-                <span>Dark Mode</span>
-            </li>
-        
-    </ol>
-</aside>
-
+        </div>
     
 <main class="main full-width">
     <article class="main-article">
@@ -218,11 +68,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <div class="article-details">
     
+    <header class="article-category">
+        
+            <a href="/categories/%E6%8A%80%E6%9C%AF/" >
+                技术
+            </a>
+        
+    </header>
+    
 
     <h2 class="article-title">
-        <a href="/about/">About</a>
+        <a href="/p/%E4%BB%8E-0-1-%E5%BC%80%E5%8F%91-chrome-extension%E4%B8%80/">从 0-1 开发 Chrome Extension（一）</a>
     </h2>
 
+    
+    <h3 class="article-subtitle">
+        基于 Manifest V3 的 manifest.json 配置略解
+    </h3>
     
 
     
@@ -263,16 +125,35 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </header>
 
     <section class="article-content">
-    <ul>
-<li>bilibili:https://space.bilibili.com/3099886</li>
-<li>github:https://github.com/charonX</li>
-</ul>
+    <h3 id="manifest-v3">Manifest V3</h3>
+<p>Manifest V3（以下简称MV3）,从 Chrome v88版本开始支持，Chrome Web Store 从2021年1月开始也接受基于MV3开发的扩展了。MV3 对于 MV2 主要有几点变化：</p>
+<ol>
+<li>Service workers 取代 background pages</li>
+</ol>
+<h3 id="background">background</h3>
+<h3 id="omnibox">omnibox</h3>
+<h3 id="option">option</h3>
+<h3 id="devtools_page">devtools_page</h3>
+<h3 id="permissions">permissions</h3>
+<p>Link Url</p>
+<p><a class="link" href="https://developer.chrome.com/docs/extensions/mv3/"  target="_blank" rel="noopener"
+    >https://developer.chrome.com/docs/extensions/mv3/</a></p>
 
 </section>
 
 
     <footer class="article-footer">
     
+    <section class="article-tags">
+        
+            <a href="/tags/chrome-extension/">Chrome Extension</a>
+        
+            <a href="/tags/chrome-%E6%8F%92%E4%BB%B6/">Chrome 插件</a>
+        
+            <a href="/tags/chrome-%E6%89%A9%E5%B1%95/">Chrome 扩展</a>
+        
+    </section>
+
 
     
     <section class="article-copyright">
@@ -294,6 +175,25 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <aside class="related-contents--wrapper">
     
+    
+        <h2 class="section-title">Related contents</h2>
+        <div class="related-contents">
+            <div class="flex article-list--tile">
+                
+                    
+<article class="">
+    <a href="/p/figma-%E4%BD%BF%E7%94%A8/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">figma 使用</h2>
+        </div>
+    </a>
+</article>
+                
+            </div>
+        </div>
     
 </aside>
 
@@ -397,6 +297,29 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             >
 
             </main>
+    
+        <aside class="sidebar right-sidebar sticky">
+            <section class="widget archives">
+                <h2 class="widget-title section-title">Table of contents</h2>
+                
+                <div class="widget--toc">
+                    <nav id="TableOfContents">
+  <ol>
+    <li>
+      <ol>
+        <li><a href="#manifest-v3">Manifest V3</a></li>
+        <li><a href="#background">background</a></li>
+        <li><a href="#omnibox">omnibox</a></li>
+        <li><a href="#option">option</a></li>
+        <li><a href="#devtools_page">devtools_page</a></li>
+        <li><a href="#permissions">permissions</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+                </div>
+            </section>
+        </aside>
     
 
         </div>
