@@ -6,27 +6,6 @@
         <description>Recent content on -I2O-&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Thu, 02 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://charonx.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>从 0-1 开发 Chrome Extension（一）</title>
-        <link>https://charonx.github.io/p/%E4%BB%8E-0-1-%E5%BC%80%E5%8F%91-chrome-extension%E4%B8%80/</link>
-        <pubDate>Thu, 02 Dec 2021 00:00:00 +0000</pubDate>
-        
-        <guid>https://charonx.github.io/p/%E4%BB%8E-0-1-%E5%BC%80%E5%8F%91-chrome-extension%E4%B8%80/</guid>
-        <description>&lt;h3 id=&#34;manifest-v3&#34;&gt;Manifest V3&lt;/h3&gt;
-&lt;p&gt;Manifest V3（以下简称MV3）,从 Chrome v88版本开始支持，Chrome Web Store 从2021年1月开始也接受基于MV3开发的扩展了。MV3 对于 MV2 主要有几点变化：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Service workers 取代 background pages&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&#34;background&#34;&gt;background&lt;/h3&gt;
-&lt;h3 id=&#34;omnibox&#34;&gt;omnibox&lt;/h3&gt;
-&lt;h3 id=&#34;option&#34;&gt;option&lt;/h3&gt;
-&lt;h3 id=&#34;devtools_page&#34;&gt;devtools_page&lt;/h3&gt;
-&lt;h3 id=&#34;permissions&#34;&gt;permissions&lt;/h3&gt;
-&lt;p&gt;Link Url&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.chrome.com/docs/extensions/mv3/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://developer.chrome.com/docs/extensions/mv3/&lt;/a&gt;&lt;/p&gt;
-</description>
-        </item>
-        
+        <lastBuildDate>Thu, 02 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://charonx.github.io/index.xml" rel="self" type="application/rss+xml" />
     </channel>
 </rss>
